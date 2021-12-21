@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_stanza_lines",
+  "info": {
+    "displayName": "line",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "linetext": {
+      "type": "string"
+    }
+  }
+}
