@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,20 +16,17 @@
       "type": "string",
       "required": true
     },
-    "Topic": {
-      "type": "enumeration",
-      "enum": [
-        "Tema1",
-        "Tema2",
-        "Tema3",
-        "Tema4"
-      ]
-    },
-    "text": {
-      "type": "richtext"
-    },
     "textjson": {
       "type": "json"
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "songs"
+    },
+    "index": {
+      "type": "integer"
     }
   }
 }
